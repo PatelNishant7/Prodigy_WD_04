@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: rgb(153, 200, 202);   
+    /* background-color: #E1e6e1; */
+}
+
+.navbar{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: rgba(0, 0 ,0, 0.35) 0px 3px 15px;
+    height: 60px;
+    background-color:cadetblue;
+    /* color: #092209; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img img{
+    margin-right:15px;
+    width: 35px;
+    opacity: 0.6;
+}
+.content p{
+    font-weight: 600;
+    font-size: 30px;
+}
+.game-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.box-container{
+    position: relative;
+    box-shadow: rgba(0, 0 ,0, 0.35) 10px 10px 15px;
+    background-color: cadetblue;
+    /* background-color: #3f826d; */
+    border-radius: 13px;
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    /* z-index: -1; */
+
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    font-size: 8vw;
+}
+.box:hover {
+    background-color: rgb(134, 186, 188);
+}
+
+.butn{
+    margin-top: 40px;
+    margin-left: 20px;
+    padding: 8px 30px;
+    background-color: cadetblue;
+    color:white;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.info{
+    font-size: 30px;
+    margin:19px 0px 10px 0px;
+    color:brown;
+}
+
+.gif{
+    
+    position: absolute;
+}
+.gif img{
+    width: 0;
+}
+.win{
+    position: absolute;
+    padding:0 70px;
+    font-size: 13vh;
+    font-weight:600;
+    background-color: rgb(195, 255, 255);
+    color: brown;
+    display: none;
+    opacity: 0.9;
+    /* transition: width 1s ease-in-out; */
+}
+/* ---------line CSS-------- */
+.line{
+    display: none;
+    background-color: black;
+    height: 5px;
+    width:25vw;
+    position: absolute;
+    background-color: red;
+    transition: width 1s ease-in;
+}
+.line1{
+    display: none;
+}
+
+
+/* ------------Utility CLASS--------------------- */
+
+.b-r0{
+border-right: 0;
+}
+
+.b-l0{
+border-left: 0;
+}
+
+.b-b0{
+border-bottom: 0;
+}
+
+.b-t0{
+border-top: 0;
+}
+
+@media screen and (max-width: 600px){
+    .box-container{
+        display: grid;
+        grid-template-columns: repeat(3, 30vw);
+        grid-template-rows: repeat(3, 30vw);
+    
+    }
+    .win{
+        padding: 0 50px;
+        font-size: 7vh;
+    }
+    .line{
+        display: none !important;
+    }
+}
+
+
+/*
+ 2-5
+2-15
+2-25
+
+-8 15
+3 15
+13 15
+
+45deg 3 15
+135deg 2 15
+*/

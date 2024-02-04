@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="shortcut icon" type="x-icon" href="images/logowhite.png">
+    <link rel="stylesheet" href="xyz.css">
+    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="">
+
+</head>
+
+<body class="Body">
+    <div id="cvform">
+        <form>
+
+            <div class="container">
+                <h1 class="title-RG">Resume Genarator</h1>
+
+                <div id="abs">
+                    <div class="about">
+                        <h2>About Section</h2>
+                    </div>
+                    <br>
+                    <!-- *******--------ABOUT_SECTION--------****** -->
+                    <div class="about-section">
+
+                        <div class="name-section flex-div">
+                            <div class="name">
+                                <p>Your Name</p>
+                                <input id="nameField" type="text" placeholder="enter name here">
+                            </div>
+                            <div class="name">
+                                <p>Phone</p>
+                                <input id="phoneField" type="text" placeholder="enter name here">
+                            </div>
+                            <div class="name">
+                                <p>Email</p>
+                                <input id="emailField" type="text" placeholder="enter name here">
+                            </div>
+                        </div>
+                        <div class="image-section">
+                            <div class="name">
+                                <p>Your Image</p>
+                                <input id="imageField" type="file" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <!-- *******--------Objective--------****** -->
+                    
+                        <div class="about">
+                            <h2>Career Objective</h2>
+                        </div>
+                        <br>
+                        <div class="about-skill-section">
+                            <div class="name-section ">
+                                <div class="name">
+                                    <p>Career Objective</p>
+                                    <textarea name="cobj" id="cobj" placeholder=" enter here" rows="2"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+                    <br>
+
+                    <!-- ---------------skill--------------- -->
+
+                    <div id="SKILL">
+                        <div class="about">
+                            <h2>Skill</h3>
+                        </div>
+                        <br>
+                        <div id="Form" class="Skill about-section">
+                            <textarea name="Project" id="skillField" class="skillField" placeholder="enter here"
+                                rows="2"></textarea>
+                        </div>
+                        <div class="btn" id="skillAddbutton">
+                            <input class="add" onclick="addnewSKILLField()" type="button" name="btn" value="Add">
+                        </div>
+                    </div>
+
+                    <!-- <div>
+                    <div class="about">
+                        <h2>Skill</h2>
+                    </div>
+                    <br>
+                    <div class="container about-skill-section">
+                        <div class="name-section flex-div">
+                            <div class="name">
+                                <p>Skill</p>
+                                <input type="text" placeholder="enter name here">
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                    <br>
+
+                    <!-- ---------------Language--------------- -->
+
+                    <div id="LNG">
+                        <div class="about">
+                            <h2>Language</h3>
+                        </div>
+                        <br>
+                        <div id="Form" class="Language about-section">
+                            <textarea name="Project" id="lngField" class="lngField" placeholder="enter here"
+                                rows="2"></textarea>
+                        </div>
+                        <div class="btn" id="lngAddbutton">
+                            <input onclick="addnewLNGField()" type="button" name="btn" value="Add">
+                        </div>
+                    </div>
+                    <br>
+                    <!-- ---------------Hobby--------------- -->
+
+                    <div id="HOBBY">
+                        <div class="about">
+                            <h2>Hobby</h3>
+                        </div>
+                        <br>
+                        <div id="Form" class="Hobby about-section">
+                            <textarea name="Project" id="hobbyField" class="hobbyField" placeholder="enter here"
+                                rows="2"></textarea>
+                        </div>
+                        <div class="btn" id="hobbyAddbutton">
+                            <input onclick="addnewhobbyField()" type="button" name="btn" value="Add">
+                        </div>
+                    </div>
+                    <br>
+                    <!-- *******--------EDUCATION--------****** -->
+                    <div id="EDU">
+                        <div class="about">
+                            <h2>Education</h3>
+                        </div>
+                        <br>
+                        <div id="Form" class="Edu about-section">
+                            <textarea name="education" id="eduField" class="eduField" placeholder="enter here"
+                                rows="2"></textarea>
+
+                            <!-- <div class="name-section flex-div">
+                            <div class="educolage name">
+                                <p>School/Collage</p>
+                                <input  type="text" placeholder="enter name here">
+                            </div>
+                            <div class="edudegree name">
+                                <p>Degree</p>
+                                <input type="text" placeholder="enter name here">
+                            </div>
+                            <div class="educity name">
+                                <p>City</p>
+                                <input type="text" placeholder="enter name here">
+                            </div>
+                        </div> -->
+                            <!-- <div class="name-section flex-div">
+                            <div class="name">
+                                <p>Start Date</p>
+                                <input type="date">
+                            </div>
+                            <div class="name">
+                                <p>End Date</p>
+                                <input type="date">
+                            </div>
+                            <div class="name">
+                                <p>Description</p>
+                                <input type="text" placeholder="enter name here">
+                            </div>
+                        </div> -->
+                        </div>
+                        <div class="btn" id="EDUAddbutton">
+                            <input onclick="addnewEDUField()" type="button" name="btn" value="Add">
+                        </div>
+                    </div>
+
+
+
+
+                    <br>
+                    <!-- *******--------EXPERIENCE--------****** -->
+                    <div id="EXP">
+                        <div class="about">
+                            <h2>Experience</h3>
+                        </div>
+                        <br>
+                        <div id="Form" class="Exp about-section">
+                            <textarea name="Experience" id="ExpField" class="expField" placeholder="enter here"
+                                rows="2"></textarea>
+                        </div>
+                        <div class="btn" id="EXPAddbutton">
+                            <input onclick="addnewEXPField()" type="button" name="btn" value="Add">
+                        </div>
+                    </div>
+
+
+
+                    <!-- <div>
+                    <div class="about">
+                        <h2>Experience</h3>
+                    </div>
+                    <br>
+                    <div class="container about-section">
+
+                        <div class="name-section flex-div">
+                            <div class="name">
+                                <p>Title</p>
+                                <input type="text" placeholder="enter name here">
+                            </div>
+                            <div class="name">
+                                <p>Company</p>
+                                <input type="text" placeholder="enter name here">
+                            </div>
+                            <div class="name">
+                                <p>Location</p>
+                                <input type="text" placeholder="enter name here">
+                            </div>
+                        </div>
+                        <div class="name-section flex-div">
+                            <div class="name">
+                                <p>Start Date</p>
+                                <input type="date">
+                            </div>
+                            <div class="name">
+                                <p>End Date</p>
+                                <input type="date">
+                            </div>
+                            <div class="name">
+                                <p>Description</p>
+                                <input type="text" placeholder="enter name here">
+                            </div>
+                        </div>
+
+                    </div>
+                </div> -->
+
+                    <!-- *******--------PROJECT--------****** -->
+
+                    <div id="PRJ">
+                        <div class="about">
+                            <h2>Project</h3>
+                        </div>
+                        <br>
+                        <div id="Form" class="Prj about-section">
+                            <textarea name="Project" id="PrjField" class="prjField" placeholder="enter here"
+                                rows="2"></textarea>
+                        </div>
+                        <div class="btn" id="prjAddbutton">
+                            <input onclick="addnewPRJField()" type="button" name="btn" value="Add">
+                        </div>
+                    </div>
+
+
+
+                    <!-- <div>
+                    <br>
+                    <div class="about">
+                        <h2>Project</h3>
+                    </div>
+                    <br>
+                    <div class="container about-section">
+
+                        <div class="name-section flex-div">
+                            <div class="name">
+                                <p>Project Name</p>
+                                <input type="text" placeholder="enter name here">
+                            </div>
+                            <div class="name">
+                                <p>Project Link</p>
+                                <input type="text" placeholder="enter name here">
+                            </div>
+                            <div class="name">
+                                <p>Description</p>
+                                <input type="text" placeholder="enter name here">
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                </div>
+                <br>
+
+            </div>
+            <div class="text-center primary p-1">
+                <input onclick="GenerateCV()" type="button" value="Generate CV" name="Gene-CV" id="Gene-CV"
+                    class="Gene-CV">
+            </div>
+        </form>
+    </div>
+    <!-- -------------------------------------------------TEMPLATE------------------------------------------- -->
+    <!-- -------------------------------------------------TEMPLATE------------------------------------------- -->
+    <!-- -------------------------------------------------TEMPLATE-------------------------- ---------------- -->
+    <!-- -------------------------------------------------TEMPLATE-------------------------- ---------------- -->
+
+    <div id="cvtemplate">
+        <div class="container flex-div mt-3">
+            <div class="row">
+                <div class="left-sectionT col-md-4">
+                    <div>
+                        <img
+                         src="images/blank-profile-picture-973460_1280.webp" 
+                         alt=""
+                         id="imgT"
+                         >
+                        <div class="left-1">
+                            <div class="Skill">
+                                <div>
+                                    <h4>Skill</h4>
+                                </div>
+
+                                <div class="skill-content" id="skill-content">
+                                    <ul id="SkillT">
+                                        <li>Lorem ipaepe!</li>
+                                        <li>Lorem ipaepe!</li>
+                                        <li>Lorem ipaepe!</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <br><br>
+
+                            <div class="Language">
+                                <div>
+                                    <h4>Language</h4>
+                                </div>
+
+                                <div class="lng-content" id="lng-content">
+                                    <ul id="LanguageT">
+                                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, saepe!</li>
+                                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, saepe!</li>
+                                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, saepe!</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <br><br>
+
+                            <div class="Hobby">
+                                <div>
+                                    <h4>Hobby</h4>
+                                </div>
+
+                                <div class="hobby-content" id="hobby-content">
+                                    <ul id="HobbyT">
+                                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, saepe!</li>
+                                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, saepe!</li>
+                                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, saepe!</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="RST col-md-8">
+                    <div class="right-sectionT ">
+                        <div>
+                            <h1 id="nameT">YOUR NAME</h1>
+                        </div>
+                        <div class="flex-div">
+                            <p id="phoneT">+91 909****09</p>
+                            <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                            <p id="emailT">@gmail.com</p>
+                        </div>
+                    </div>
+                    <br><br><br><br>
+
+                    <!-- --------------------------Objective---------------------------->
+                    <div class="right-2 ">
+                        <div class="car-obj">
+                            <h4>Career Objective</h4>
+                            <p id="cobjT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eaque nam
+                                eligendi vero sint suscipit sit maiores, consequuntur beatae harum </p>
+
+                        </div>
+                        <br><br>
+                        <!-- --------------------------Education---------------------------->
+                        <div class="edu">
+                            <div>
+                                <h4>Education</h4>
+                            </div>
+
+                            <div class="edu-content" id="edu-content">
+                                <ul id="eduT">
+                                    <li>
+                                        <div>course name</div>
+                                        <div>collage name</div>
+                                        <div>year</div>
+                                    </li>
+                                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, saepe!</li>
+                                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, saepe!</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <br><br>
+                        <!-- --------------------------Exeperience---------------------------->
+                        <div class="experience">
+                            <div>
+                                <h4>Experience</h4>
+                            </div>
+
+                            <div class="exp-content" id="exp-content">
+                                <ul id="ExpT">
+                                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, saepe!</li>
+                                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, saepe!</li>
+                                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, saepe!</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <br><br>
+                        <!-- --------------------------Project---------------------------->
+                        <div class="project">
+                            <div>
+                                <h4>Project</h4>
+                            </div>
+
+                            <div class="Project-content">
+                                <ul id="PrjT">
+                                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, saepe!</li>
+                                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, saepe!</li>
+                                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, saepe!</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <input class="print p-2" onclick="printcv()" type="button" value="Print Resume">
+        </div>
+    </div>
+
+
+    <script src="templat.js"></script>
+</body>
+
+</html>

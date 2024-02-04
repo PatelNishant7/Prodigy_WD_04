@@ -1,0 +1,113 @@
+.Body{
+    background-color: rgb(237, 237, 237);
+}
+#cvtemplate{
+    height: 1600px;
+    display: none;
+}
+.row{
+    position: relative;
+    height: 1500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+h2,h3,h4,p, li{
+    font-size: large;
+}  
+h1{
+    font-size: 400px;
+}
+.right-2{
+    padding:25px 25px ;
+    margin: 38px 20px 0px 20px;
+}
+.left-1{
+    padding:0px 25px 0px 25px ;
+    margin: 0px 20px 0px 20px;
+}
+.title-RG{
+    padding: 30px 30px;
+   
+}
+
+
+
+.Edu{
+    display: block;
+}
+p{
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn input{
+    border-width: 0.5px;
+    /* border: none; */
+    padding: 4px;
+    background-color: rgb(225, 225, 225);
+    /* color: white; */
+}
+.btn input:hover{
+    background-color: rgb(110, 157, 158);
+    color: white;
+}
+
+.flex-div{
+    display: flex;
+    align-items: center;
+}
+.about{
+    padding: 2px 0px;
+    width: 100%;
+    background-color: #5f9ea0;
+}
+.about h2{
+    margin: 7px;
+}
+.about-section{
+    padding: 30px;
+    border: 1px solid rgb(159, 159, 159);
+    /* text-align: center; */
+    background-color: rgb(241, 241, 241);
+}
+.name{
+    margin:  0px 30px;
+}
+.name input{
+    width: 300px;
+    height: 30px;
+
+}
+.name-section{
+    margin-bottom: 50px;
+}
+
+.about-skill-section{
+    padding: 10px 16px;
+    border: 1px solid rgb(159, 159, 159);
+    /* text-align: center; */
+    background-color: rgb(241, 241, 241);
+}
+.about-skill-section .name-section .name input{
+    width:139vh;
+}
+
+
+.button input{
+    color: white;
+    background-color:cadetblue;
+    padding: 5px;
+    height: 40px;
+}
+
+.print{
+background-color: cadetblue;
+color: white;
+}
+.Gene-CV{
+    padding: 8px;
+background-color:cadetblue;
+color: white;
+}
